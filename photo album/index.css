@@ -1,77 +1,110 @@
 body{
-    --color-bg: #16181b;
-    display: grid;
-    place-items: ceter;
-    margin: 0;
-    height: 100vh;
-    padding: 0 50px;
-    background: var(--color-bg);
-}
-*{
-    scrollbar-color: transparent transparent;
-    scrollbar-width: 0px;
-}
-*::-webkit-scrollbar{
-    width: 0;
-}
-*::-webkit-scrollbar-track{
-    background: transparent;
-}
-*::-webkit-scrollbar-thumb{
-    background: transparent;
-    border: none;
-}
-ol, li{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.carousel{
-    position: relative;
-    width: 100%;
-    height: 50vw;
-    perspective: 100px;
-    overflow: hidden;
-    cursor: grab;
-}
-.viewport{
-    position: absolute;
-    inset: 0;
+    min-height: 100vh;
     display: flex;
-    overflow-x: scroll;
-    counter-reset: item;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory; 
+    flex-direction: column;
+    justify-content: center;
+    background: #1f1f1f;
+    text-align: center;
+    font-family: "poppins";
 }
-.carousel::before,
-.carousel::after{
-    content: "";
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    translate: -50% 0;
-    width: 500%;
-    height: 500%;
-    border-radius: 50%;
-    background: var(--color-bg);
+.accordion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    gap: 16px;
+    transition: 0.3s;
 }
-.carousel::before{
-    top: -480%;
-}
-.slide{
+.accordion li{
     position: relative;
-    flex: 0 0 33.33%;
-    width: 33.33%;
-    counter-increment: item;
+    overflow: hidden;
+    flex: 0 0 80px;
+    border-radius: 50px;
+    opacity: 0.75;
+    cursor: pointer;
 }
-.snapper{
+.accordion li img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.accordion li,
+.accordion li img,
+.accordion li .content,
+.accordion li .content span{
+    transition: 0.3s;
+}
+.accordion p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 45px;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+.accordion li .content{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    scroll-snap-align: center;
-    background-size: cover;
-    background-position: 50%;
-    border: 10px solid var(--color-bg);
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    color: #fff;
+    padding: 15px;
+    background: #02022e;
+    background: 
+    linear-gradient(
+        0deg,
+        rgba(0 0 0 / 70%)
+        10%,
+        rgba(255 255 255 / 0%)
+        100%
+    );
+    opacity: 0;
+    visibility: hidden;
+}
+.accordion:hover{
+    gap: 0;
+}
+.accordion li .content span{
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 50px;
+    translate: -50%;
+    scale: 0.85;
+    visibility: hidden;
+    opacity: 0;
+}
+.accordion li:hover{
+    flex: 0 1 260px;
+    scale: 1.1;
+    z-index: 10;
+    opacity: 1;
+}
+.accordion li:hover .content{
+    opacity: 1;
+    visibility: visible;
+}
+.accordion li:hover span{
+    scale: 1;
+    opacity: 1;
+    visibility: visible;
+}
+::-webkit-scrollbar{
+    width: 12px;
+    background: #fff6cc;
+}
+::-webkit-scrollbar-track{
+    border-radius: 3px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #3F48CC;
+    border: 2px solid #eff1f5;
 }
