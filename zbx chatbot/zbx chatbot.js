@@ -2,17 +2,30 @@ const messagesContainer = document.getElementById("messages");
 
 // 預設回答邏輯
 const responses ={
-    "翔翔你好呀": "你好呀，我的綸寶~",
+    "翔翔你好呀": "你好呀，我的軒寶~",
+    "Hello, Xiangxiang~": "Hello, My Lunlun~",
+    "Hello, Xiangxiang": "Hello, My Lunlun~",
     "你在做什麼呢": "我在打傳說~",
+    "What are you doing now":"I am playing Area of valor~",
     "我人不舒服": "你還好嗎?要不要我帶你去看醫生",
+    "I am uncomfortable": "Are you okay? Do you want me to take you to the doctor?",
     "不用了，休息就可以了": "那好，要是需要什麼就跟我說唷~",
+    "No, just rest": "Okay, if you need anything, just let me know~",
     "我想你了": "我也想你了，綸寶~",
+    "I miss you": "I miss you too, Lunlun~",
     "什麼時候才可以見到你啊": "很快呀，只要你回來宿舍，我沒有比賽的時候就可以見到我了",
+    "When can I see you": "Very soon, as long as you come back to the dormitory, you can see me when I don't have a match",
     "翔寶~": "怎麼了呀~",
+    "Xiangbao~":"What's wrong~",
     "翔翔~": "怎麼了呀~",
+    "Xiangxiang": "What's wrong~",
     "我愛你": "我也愛你，我的綸綸寶貝",
+    "I love you": "I love you too, My Lunlun baby",
     "還記得我送你的史迪奇嗎": "當然記得呀，我把他收在宿舍陪著我",
-    "default": "抱歉，我不明白您的問題",
+    "Do you remember the Stitch I gave you?": "Of course I remember, I keep him in the dormitory with me",
+    "你有沒有想我": "有啊，我每天都想你",
+    "Do you miss me?": "Yes, I think of you every day",
+    "default": "Sorry, I don't understand your question"
 };
 
 // 發送訊息函數
