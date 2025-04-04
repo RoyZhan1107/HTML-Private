@@ -18,6 +18,10 @@ header{
     padding: 10px 0;
     text-align: center;
 }
+.content{
+    display: flex;
+    align-items: center;
+}
 /*置頂列*/
 .container{
     display: flex;
