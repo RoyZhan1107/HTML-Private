@@ -10,7 +10,7 @@ body{
     color: #fff;
 }
 header{
-    font-size: 25px;
+    font-size: 20px;
     position: absolute;
     top: 0;
     width: 100%;
@@ -43,6 +43,9 @@ ul{
     align-items: center;
     gap: 1.2rem;
     list-style: none;
+}
+img{
+    margin-top: 5%;
 }
 .link{
     text-decoration: none;
