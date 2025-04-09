@@ -47,6 +47,12 @@ ul{
 img{
     margin-top: 5%;
 }
+video{
+    margin: 0;
+}
+.first{
+    margin-left: 5%;
+}
 .link{
     text-decoration: none;
     color: #fff;
