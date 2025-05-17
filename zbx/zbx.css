@@ -23,6 +23,14 @@ nav{
     list-style: none;
     background: #1d1d1d;
 }
+.content li{
+    color: #fff;
+    list-style: none;
+    padding: 5px;
+}
+img{
+    margin-left: 2rem;
+}
 .link{
     color: #fff;
     text-decoration: none;
