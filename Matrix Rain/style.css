@@ -1,0 +1,30 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background: #000;
+    overflow: hidden;
+    height: 100%;
+}
+.menu{
+    margin-top: 1rem;
+    text-align: center;    
+}
+.link{
+    color: #fff;
+    text-decoration: none;
+}
+.menu li{
+    list-style: none;
+}
+canvas{
+    display: block;
+}
+footer{
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    font-size: 15px;
+    bottom: 0;
+    width: 100%;
+}
