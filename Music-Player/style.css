@@ -114,6 +114,17 @@ audio{
     font-size: 36px;
     font-weight: bold;
 }
+.lyrics::-webkit-scrollbar{
+    width: 6px;
+}
+.lyrics::-webkit-scrollbar-track{
+    background: none;
+    border-radius: 10px;
+}
+.lyrics::-webkit-scrollbar-thumb{
+    background: none;
+    border-radius: 10px;
+}
 .container{
     display: flex;
     align-items: center;
