@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Music Player</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box form-box">
+                <header>Music Player</header>
+                <a href="#" onclick="Search(event)" id="search-btn" class="text">🔍 搜尋</a>
+                <form action="" method="post">
+                    <div class="song input" id="song-input">
+                        <input type="text" id="search" class="search" onkeyup="onSearch()" placeholder="Search for song...">
+                    </div>
+                    <a href="#" onclick="SongList(event)" id="song-list-btn" class="text">🎵歌曲列表</a>
+                    <div>
+                        <ul id="list" class="list">
+                            <li><a href="Music/囂張-en.mp3" class="text" target="_blank">Arrogant(囂張)-en</a></li>
+                            <li><a href="Music/間距-en.mp3" class="text" target="_blank">Space Between Us(間距)-en</a></li>
+                            <li><a href="Music/" class="text" target="_blank">Elimination(淘汰)-en</a></li>
+                            <li><a href="Music/綠色.mp3" class="text" target="_blank">Green(綠色)</a></li>
+                            <li><a href="Music/我只想要.mp3" class="text" target="_blank">All I Wanted(我只想要)</a></li>
+                            <li><a href="Music/姐姐戀愛吧.mp3" class="text" target="_blank">Sis, Go Fall in Love(姐姐戀愛吧)</a></li>
+                            <li><a href="Music/等你的回答.mp3" class="text" target="_blank">Waiting for Your Answer(等你的回答)</a></li>
+                            <li><a href="Music/你的酒館對我打了洋.mp3" class="text" target="_blank">Like a Foreigner in Your Tavern(你的酒館對我打了烊)</a></li>
+                            <li><a href="Music/自娛自樂.mp3" class="text" target="_blank">Entertain yourself(自娛自樂)</a></li>
+                            <li><a href="Music/很需要.mp3" class="text" target="_blank">Really Needed(很需要)</a></li>
+                            <li><a href="Music/愛一點.mp3" class="text" target="_blank">Love a little(愛一點)</a></li>
+                            <li><a href="Music/就是愛你.mp3" class="text" target="_blank">Just Love You(就是愛你)</a></li>
+                            <li><a href="Music/童話.mp3" class="text" target="_blank">Fairy tale(童話)</a></li>
+                            <li><a href="Music/後來.mp3" class="text" target="_blank">Afterwards(後來)</a></li>
+                            <li><a href="Music/老鼠愛大米.mp3" class="text" target="_blank">A Mouse Loves Rice(老鼠愛大米)</a></li>
+                            <li><a href="Music/羅生門.mp3" class="text" target="_blank">Rashomon(羅生門 Follow)</a></li>
+                            <li><a href="Music/Letting go.mp3" class="text" target="_blank">Letting go</a></li>
+                            <li><a href="Music/紅色高跟鞋.mp3" class="text" target="_blank">Red high heels(紅色高跟鞋)</a></li>
+                            <li><a href="Music/出山.mp3" class="text" target="_blank">Return to the Scene(出山)</a></li>
+                            <li><a href="Music/下山.mp3" class="text" target="_blank">Descend the mountain(下山)</a></li>
+                            <li><a href="Music/陽光宅男.mp3" class="text" target="_blank">Sunny Homebody(陽光宅男)</a></li>
+                            <li><a href="Music/越來越不懂.mp3" class="text" target="_blank">More and More Confused(越來越不懂)</a></li>
+                            <li><a href="Music/幸福不是情歌.mp3" class="text" target="_blank">Happiness is not a love song(幸福不是情歌)</a></li>
+                            <li><a href="Music/世界上的另一個我.mp3" class="text" target="_blank">Another Version of Me in the World(世界上的另一個我)</a></li>
+                            <li><a href="Music/命運.mp3" class="text" target="_blank">Fate(命運)</a></li>
+                            <li><a href="Music/兩難.mp3" class="text" target="_blank">A difficult choice(兩難)</a></li>
+                            <li><a href="Music/湊熱鬧.mp3" class="text" target="_blank">Join in the fun(湊熱鬧)</a></li>
+                            <li><a href="Music/replay.mp3" class="text" target="_blank">Replay(姐姐真漂亮)</a></li>
+                            <li><a href="Music/泡沫.mp3" class="text" target="_blank">Bubble(泡沫)</a></li>
+                            <li><a href="Music/喜歡你.mp3" class="text" target="_blank">I Like You(喜歡你)</a></li>
+                            <li><a href="Music/boyfriend.mp3" class="text" target="_blank">Boyfriend</a></li>
+                            <li><a href="Music/告白氣球.mp3" class="text" target="_blank">Love Confession Balloon(告白氣球)</a></li>
+                            <li><a href="Music/11.mp3" class="text" target="_blank">11</a></li>
+                            <li><a href="Music/Longing Without Distance.mp3" class="text" target="_blank">Longing Without Distance(零距離的思念)</a></li>
+                            <li><a href="Music/My silent love.mp3" class="text" target="_blank">My silent love</a></li>
+                            <li><a href="Music/Hallway Memories.mp3" class="text" target="_blank">Hallway Memories</a></li>
+                        </ul>
+                    </div>
+                    <div class="queue" id="queue">
+                        <strong>Queue:</strong>
+                    </div>
+                    <div class="lyrics" id="lyrics-box">
+                        <ul id="lyrics-list" class="lyrics-list"></ul>
+                    </div>
+                    <audio src="" class="player" id="audio" controls autoplay ></audio>
+                    <div class="floatHint" id="floatHint"></div>
+                    <div class="msgbox" id="msgbox">
+                        <ul class="msg-list">
+                            <span>Operation Tips</span>
+                            <li>space : play/pause</li>
+                            <li>↑ / ↓ : volume control</li>
+                            <li>← / → : remove / add progress 5 seconds</li>
+                            <li>/ : focus search bar</li>
+                            <li>esc : unfocus search bar</li>
+                            <li>? : show/hide operation tips</li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="lyrics 2.js"></script>
+    </body>
+</html>
