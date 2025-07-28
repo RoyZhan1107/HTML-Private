@@ -92,12 +92,12 @@ audio{
 }
 .lyrics-list{
     list-style: none;
-    max-height: 60vh;
+    max-height: 65vh;
     overflow-y: auto;
 }
 .lyrics{
     overflow-y: auto;
-    height: 50vh;
+    height: 55vh;
     text-align: center;
     font-size: 18px;
     color: #000;
