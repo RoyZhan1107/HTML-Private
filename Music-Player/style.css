@@ -9,7 +9,7 @@ body{
     margin-top: 20px;
 }
 .list{
-    max-height: 300px;
+    max-height: 250px;
     overflow-y: auto;
 }
 .list::-webkit-scrollbar{
@@ -92,12 +92,12 @@ audio{
 }
 .lyrics-list{
     list-style: none;
-    max-height: 65vh;
+    max-height: 62vh;
     overflow-y: auto;
 }
 .lyrics{
     overflow-y: auto;
-    height: 55vh;
+    height: 57vh;
     text-align: center;
     font-size: 18px;
     color: #000;
