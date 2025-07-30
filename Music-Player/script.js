@@ -194,3 +194,7 @@ songLinks.forEach((link, index) => {
         loadLyrics(name);
     });
 });
+// turn off search history
+document.querySelector("input").addEventListener("focus", function(){
+    this.value = "";
+});
