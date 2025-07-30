@@ -52,6 +52,13 @@ document.addEventListener("contextmenu", function(event) {
 
 // Music Add to Queue
 const audio = document.getElementById("audio");
+// stop the music
+audio.pause();
+// reset play time
+audio.currentTime = 0;
+audio.src = "newfile.mp3";
+audio.play().catch(e => console.error("Play Error", e));
+
 const queue = document.getElementById("queue");
 const songLinks = document.querySelectorAll("#list a");
 
