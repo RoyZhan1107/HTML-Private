@@ -195,6 +195,6 @@ songLinks.forEach((link, index) => {
     });
 });
 // turn off search history
-document.querySelector("input").addEventListener("focus", function(){
-    this.value = "";
-});
+// document.querySelector("input").addEventListener("focus", function(){
+//     this.value = "";
+// });
