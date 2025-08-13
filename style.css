@@ -1,0 +1,197 @@
+/*內頁*/
+body{
+    background: url("img/Yu\ Jun\ Song-TikTok\ Photo.png") no-repeat center center fixed;
+    background-color: #1d1d1d;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+.form-box header{
+    height: 20px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+header{
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+/*置頂列*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    background: #1d1d1d;
+    height: 35px;
+    width: 100%;
+    text-align: center;
+}
+nav{
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1d1d;
+    color: #fff;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    list-style: none;
+}
+.right-menu{
+    position: absolute;
+    top: 4.4rem;
+    right: 0;
+    padding: 10px 50px;
+    font-size: 24px;
+}
+.setting span{
+    color: #fff;
+    font-size: 24px;
+    justify-content: center;
+    display: flex;
+}
+.setting{
+    position: absolute;
+    right: 0;
+    display: none;
+}
+.about span{
+    font-size: 24px;
+}
+.about ul{
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+.about{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    list-style: none;
+    transform: (-50%);
+    padding: 50px 50px 50px 50px;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    top: 50%;
+    left: 45%;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+.setbg{
+    display: none;
+}
+.setting ul{
+    flex-direction: column;
+    justify-content: center;
+}
+.window{
+    display: none;
+    width: 500px;
+    height: 500px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 9999;
+}
+.window-header{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.window-body img {
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+.window-body img:hover {
+    transform: scale(1.2);
+    z-index: 1000;
+    position: relative;
+}
+.bg-header{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg-body ul{
+    flex-direction: column;
+}
+.resizable{
+    resize: both;   /* 屬性改成可縮放 */
+    overflow: auto; /* 改成可縮放 */
+}
+.bg-ctrl .btn{
+    margin-left: 5px;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+.window-ctrl .btn{
+    margin-left: 5px;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+.window-body{
+    padding: 30px;
+    flex: 1;
+    background: #fff;
+    overflow: auto;
+}
+.link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 0.5rem;
+    position: relative;
+}
+.window-body button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin-left: 1rem;
+}
+p{
+    color: #fff;
+}
+/*末頁*/
+footer{
+    background-color: #1d1d1d;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+}

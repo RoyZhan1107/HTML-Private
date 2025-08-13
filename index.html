@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, iinitial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="style.css">
         <title>Roy Zhan Private HTML Website</title>
     </head>
     <body>
@@ -27,19 +27,63 @@
                 </div>
             </div>
         </nav>
-        <div class="content">
-            <img class="first" src="yjs/img/Yu Jun Song-TikTok Photo.png" alt="" height="400px" width="300px">
-            <img src="yjs/img/Yu Jun Song-TikTok Photo-2.jpg" alt="" height="400px" width="200px">
-            <img src="yjs/img/Yu Jun Song-TikTok Photo-3.jpg" alt="" height="400px" width="200px"><br>
-            <video class="first" src="yjs/img/Yu Jun Song-TikTok Video.mp4" height="350px" width="300px" controls autoplay muted loop></video>
-            <video src="yjs/img/Yu Jun Song-TikTok Video-2.mp4" height="350px" width="300px" controls autoplay muted loop></video>
-            <video src="yjs/img/Yu Jun Song-TikTok Video-3.mp4" height="350px" width="300px" controls autoplay muted loop></video>
-            <video class="first" src="yjs/img/Yu Jun Song-TikTok Video-4.mp4" height="350px" width="300px" controls autoplay muted loop></video>
-            <video src="yjs/img/Yu Jun Song-TikTok Video-5.mp4" height="350px" width="300px" controls autoplay muted loop></video>
-            <video src="yjs/img/Yu Jun Song-TikTok Video-6.mp4" height="350px" width="300px" controls autoplay muted loop></video>
+        <div class="right-menu">
+            <a href="#" class="link" onclick="setting(event)">Setting</a>
         </div>
-            <footer>
-            &copy;Writer: Roy Zhan<br>
+        <div class="setting" id="setting">
+            <span>Setting</span>
+            <ul>
+                <li><a href="#" class="link" onclick="setbg(event)">Change Background</a></li>
+                <li><a href="#" class="link" onclick="about(event)">About</a></li>
+            </ul>
+        </div>
+        <div class="window resizable" id="change-bg" style="display: none;">
+            <div class="bg-header" id="bg-header">
+                    <span class="bg-title">Change Background</span>
+                    <div class="bg-ctrl">
+                        <button class="btn" id="btn" onclick="maxwindow('change-bg')">🗖</button>
+                        <button id="btn" class="btn" onclick="closewindow('change-bg')">✖</button>
+                    </div>
+                </div>
+                    <div class="bg-body">
+                        <ul>
+                            <img src="img/Yu Jun Song-TikTok Photo.png" alt="" onclick="changebg('Yu Jun Song-TikTok Photo.png')" height="300px" width="250px">
+                            <img src="img/Yu Jun Song-TikTok Photo-2.png" alt="" onclick="changebg('Yu Jun Song-TikTok Photo-2.png')" height="300px" width="250px">
+                            <img src="img/Yu Jun Song-TikTok Photo-3.png" alt="" onclick="changebg('Yu Jun Song-TikTok Photo-3.png')" height="300px" width="250px">
+                            <img src="img/Yu Jun Song-TikTok Photo-4.png" alt="" onclick="changebg('Yu Jun Song-TikTok Photo-4.png')" height="300px" width="250px">
+                            <img src="img/Yu Jun Song-TikTok Photo-5.png" alt="" onclick="changebg('Yu Jun Song-TikTok Photo-5.png')" height="300px" width="250px">
+                            <img src="img/Yu Jun Song-TikTok Photo-6.png" alt="" onclick="changebg('Yu Jun Song-TikTok Photo-6.png')" height="350px" width="250px">
+                            <img src="img/Yu Jun Song-TikTok Photo-7.jpg" alt="" onclick="changebg('Yu Jun Song-TikTok Photo-7.jpg')" height="450px" width="250px">
+                            <img src="img/Yu Jun Song-TikTok Photo-8.jpg" alt="" onclick="changebg('Yu Jun Song-TikTok Photo-8.jpg')" height="300px" width="450px">
+                            <img src="img/Yu Jun Song-TikTok Photo-9.jpg" alt="" onclick="changebg('Yu Jun Song-TikTok Photo-9.jpg')" height="300px" width="250px">
+                            <img src="img/Wang Yi En-TikTok Photo.png" alt="" onclick="changebg('Wang Yi En-TikTok Photo.png')" height="400px" width="350px">
+                            <img src="img/Wang Yi En-TikTok Photo-2.png" alt="" onclick="changebg('Wang Yi En-TikTok Photo-2.png')" height="400px" width="350px">
+                            <img src="img/Wang Yi En-TikTok Photo-3.png" alt="" onclick="changebg('Wang Yi En-TikTok Photo-3.png')" height="400px" width="350px">
+                            <img src="img/Wang Yi En-TikTok Photo-4.png" alt="" onclick="changebg('Wang Yi En-TikTok Photo-4.png')" height="400px" width="350px">
+                            <img src="img/Wang Yi En-TikTok Photo-5.png" alt="" onclick="changebg('Wang Yi En-TikTok Photo-5.png')" height="300px" width="550px">
+                            <img src="img/Wang Yi En-TikTok Photo-6.png" alt="" onclick="changebg('Wang Yi En-TikTok Photo-6.png')" height="300px" width="550px">
+                            <img src="img/Wang Yi En-TikTok Photo-7.png" alt="" onclick="changebg('Wang Yi En-TikTok Photo-7.png')" height="300px" width="550px">
+                            <img src="img/Wang Yi En-TikTok Photo-8.png" alt="" onclick="changebg('Wang Yi En-TikTok Photo-8.png')" height="750px" width="500px">
+                            <img src="img/Wang Yi En-TikTok Photo-9.png" alt="" onclick="changebg('Wang Yi En-TikTok Photo-9.png')" height="450px" width="350px">
+                            <img src="img/Wang Yi En-TikTok Photo-10.png" alt="" onclick="changebg('Wang Yi En-TikTok Photo-10.png')" height="400px" width="350px">
+                            <img src="img/Wang Yi En-TikTok Photo-11.png" alt="" onclick="changebg('Wang Yi En-TikTok Photo-11.png')" height="400px" width="350px">
+                            <img src="img/Wang Yi En-TikTok Photo-12.jpg" alt="" onclick="changebg('Wang Yi En-TikTok Photo-12.jpg')" height="300px" width="350px">
+                            <img src="img/Wang Yi En-TikTok Photo-13.jpg" alt="" onclick="changebg('Wang Yi En-TikTok Photo-13.jpg')" height="300px" width="250px">
+                            <img src="img/Wang Yi En-TikTok Photo-14.jpg" alt="" onclick="changebg('Wang Yi En-TikTok Photo-14.jpg')" height="300px" width="350px">
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <ul>
+                <span>About</span>
+                <li>
+                    version: 2.0
+                    <a href="index v1.txt" class="link">index V1</a>
+                </li>
+            </ul>
+        </div>
+            <footer>&copy;Writer: Roy Zhan
         </footer>
         <script src="script.js"></script>
     </body>

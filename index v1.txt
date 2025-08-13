@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, iinitial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>Roy Zhan Private HTML Website</title>
+    </head>
+    <body>
+        <nav>
+            <header> HTML Home</header>
+            <div class="container">
+                <div class="box form-box">
+                    <div class="menu">
+                        <ul>
+                            <a href="index.html" class="link">Home</a>
+                            <a href="yjs/yjs.html" class="link">Yu Jun song' Personal Website</a>
+                            <a href="yjs chatbot/index.html" class="link">Yu Jun Song chat room</a>
+                            <a href="photo album/FlipBook-YJS.html" class="link">Yu Jun Song FlipBook Photo Album</a>
+                            <a href="Matrix Rain/index.html" class="link">Matrix Rain</a>
+                            <a href="System Maintenance/System Maintenance.html" class="link">System Maintenance</a>
+                            <a href="Music-Player/index.html" class="link">Music Player</a>
+                            <a href="https://github.com/dashboard" class="link" target="_blank">Roy Zhan's Personal Github Dashboard</a>
+                            <a href="https://royzhan1107.github.io/HTML/en/index.html" class="link">Roy Zhan's Personal HTML Website</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <img class="first" src="yjs/img/Yu Jun Song-TikTok Photo.png" alt="" height="400px" width="300px">
+            <img src="yjs/img/Yu Jun Song-TikTok Photo-2.jpg" alt="" height="400px" width="200px">
+            <img src="yjs/img/Yu Jun Song-TikTok Photo-3.jpg" alt="" height="400px" width="200px"><br>
+            <video class="first" src="yjs/img/Yu Jun Song-TikTok Video.mp4" height="350px" width="300px" controls autoplay muted loop></video>
+            <video src="yjs/img/Yu Jun Song-TikTok Video-2.mp4" height="350px" width="300px" controls autoplay muted loop></video>
+            <video src="yjs/img/Yu Jun Song-TikTok Video-3.mp4" height="350px" width="300px" controls autoplay muted loop></video>
+            <video class="first" src="yjs/img/Yu Jun Song-TikTok Video-4.mp4" height="350px" width="300px" controls autoplay muted loop></video>
+            <video src="yjs/img/Yu Jun Song-TikTok Video-5.mp4" height="350px" width="300px" controls autoplay muted loop></video>
+            <video src="yjs/img/Yu Jun Song-TikTok Video-6.mp4" height="350px" width="300px" controls autoplay muted loop></video>
+        </div>
+            <footer>
+            &copy;Writer: Roy Zhan<br>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
