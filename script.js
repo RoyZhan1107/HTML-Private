@@ -121,3 +121,16 @@ window.onload = () => {
         changebg(savedImage);
     }
 }
+
+document.querySelectorAll('.link').forEach(link => {
+    link.addEventListener('contextmenu', function(e){
+        e.preventDefault();
+        const nw = window.open(this.href, '_blank');
+        if(nw){
+            nw.focus();
+        }
+        else{
+            alert("請允許瀏覽器彈出視窗!");
+        }
+    });
+});
