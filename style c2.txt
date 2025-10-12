@@ -1,6 +1,6 @@
 /*內頁*/
 body{
-    background: url("img/110335.jpg") no-repeat center center fixed;
+    background: url("img/Yu\ Jun\ Song-TikTok\ Photo.png") no-repeat center center fixed;
     background-color: #1d1d1d;
     background-size: cover;
     background-repeat: no-repeat;

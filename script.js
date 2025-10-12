@@ -130,7 +130,7 @@ document.querySelectorAll('.link').forEach(link => {
             nw.focus();
         }
         else{
-            alert("請允許瀏覽器彈出視窗!");
+            alert("Please allow pop-ups for this website!");
         }
     });
 });
