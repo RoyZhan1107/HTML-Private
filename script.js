@@ -93,7 +93,7 @@ function dragElement(elmnt, headerId){
 }
 dragElement(document.getElementById("change-bg"), "bg-header");
 function changebg(imgPath){
-    const fullPath = `img/${imgPath}`;
+    const fullPath = `image/${imgPath}`;
     const img = new Image();
     img.onload = () =>{
         document.body.style.backgroundImage = `url('${fullPath}')`;
