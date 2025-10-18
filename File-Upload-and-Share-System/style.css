@@ -1,0 +1,84 @@
+*{
+    --b: #000;
+    --w: #fff;
+    --bl: #007bff;
+}
+body{
+    background: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.top{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+header{
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+.link{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+    background: var(--w);
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+.container span{
+    justify-content: center;
+    font-size: 18px;
+    display: flex;
+}
+input, button{
+    padding: 8px;
+    margin: 5px;
+    font-size: 16px;
+}
+.text{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.file-item{
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fafafa;
+}
+.file-item strong{
+    cursor: pointer;
+    color: var(--bl);
+    text-decoration: underline;
+}
+.preview img, .preview iframe{
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: var(--bl);
+    color: var(--w);
+    transition: 0.2s;
+}
+button:hover{
+    background: #0056b3;
+}
+.share-link{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}

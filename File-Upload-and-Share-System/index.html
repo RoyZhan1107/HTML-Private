@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>File Upload and Share System</title>
+    </head>
+    <body>
+        <header>File Upload and Share System</header>
+        <div class="top">
+            <ul>
+                <li><a href="../index.html" class="link" target="_parent">Home</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <span>📤 File Upload, Preview and Share</span>
+            <div class="upload-section">
+                <input type="file" id="fileInput">
+                <input type="text" class="text" id="categoryInput" placeholder="Input category name" autocomplete="off">
+                <button class="btn" onclick="uploadFile()">Upload</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="text" id="searchInput" placeholder="Search file name or category..." autocomplete="off">
+                <button class="btn" onclick="searchFiles()">🔍Search</button>
+                <button class="btn" onclick="exportJSON()">💾Export JSON</button>
+                <input type="file" id="importJSON" accept=".json" onchange="importJSON(event)">
+            </div>
+            <div class="fileList" id="fileList"></div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
