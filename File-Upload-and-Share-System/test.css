@@ -1,0 +1,77 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #9d1117;
+    color: #f0f6fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.app-container {
+  width: 600px;
+  background: #161b22;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="file"] {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background: #238636;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2ea043;
+}
+
+.entry {
+  background: #21262d;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.entry .actions {
+  text-align: right;
+  margin-top: 5px;
+}
+
+.entry button {
+  background: #da3633;
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+.entry button:hover {
+  background: #f85149;
+}
+
+.preview img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.preview video, .preview audio {
+  width: 100%;
+  margin-top: 5px;
+}
