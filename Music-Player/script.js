@@ -137,7 +137,7 @@ document.addEventListener("keydown", function(e) {
 
     const key = e.key.toLowerCase();
     switch(key) {
-        case " ":
+        case " " || "k":
             e.preventDefault();
             if(audio.paused) {
                 audio.play();
@@ -162,6 +162,14 @@ document.addEventListener("keydown", function(e) {
         case "arrowright":
             audio.currentTime = Math.min(audio.currentTime + 5, audio.duration);
             showHint("+5 seconds");
+            break;
+        case "j":
+            audio.currentTime = Math.max(audio.currentTime - 10, 0);
+            showHint("-10 seconds");
+            break;
+        case "l":
+            audio.currentTime = Math.min(audio.currentTime + 10, audio.duration);
+            showHint("+10 seconds");
             break;
         case "m":
             audio.muted = !audio.muted;
