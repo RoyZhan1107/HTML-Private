@@ -136,6 +136,7 @@ document.addEventListener("keydown", function(e) {
     }
 
     const key = e.key.toLowerCase();
+    const inputbox = document.getElementById("search");
     switch(key) {
         case " " || "k":
             e.preventDefault();
@@ -164,12 +165,21 @@ document.addEventListener("keydown", function(e) {
             showHint("+5 seconds");
             break;
         case "j":
-            audio.currentTime = Math.max(audio.currentTime - 10, 0);
-            showHint("-10 seconds");
-            break;
+            
+            if(document.activeElement === inputbox){
+                // do nothing
+            }else{   
+                audio.currentTime = Math.max(audio.currentTime - 10, 0);
+                showHint("-10 seconds");
+                break;
+            }
         case "l":
-            audio.currentTime = Math.min(audio.currentTime + 10, audio.duration);
-            showHint("+10 seconds");
+            if(document.activeElement === inputbox){
+                // do nothing                
+            }else{
+                audio.currentTime = Math.min(audio.currentTime + 10, audio.duration);
+                showHint("+10 seconds");
+            }
             break;
         case "m":
             audio.muted = !audio.muted;
@@ -202,7 +212,26 @@ songLinks.forEach((link, index) => {
         loadLyrics(name);
     });
 });
-// turn off search history
-// document.querySelector("input").addEventListener("focus", function(){
-//     this.value = "";
-// });
+// Voice Input for Search
+function startVoice(){
+    if(!('webkitSpeechRecognition' in window)){
+        alert("Your browser does not support Speech Recognition.");
+        return;
+    }
+
+    recognition = new webkitSpeechRecgonition();
+    recognition.lang = "en-US";
+    recognition.continuous = false;
+    recognition.interimResults = false;
+
+    recognition.start();
+
+    recognition.onresult = (event) => {
+        let text = event.results[0][0].transcript;
+        document.getElementById("search").value = text;
+    };
+
+    recognition.onerror = (event) => {
+        console.error("Speech recognition error", event);
+    };
+}
